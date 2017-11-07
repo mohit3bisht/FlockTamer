@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.flocktamer">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".Flock"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        >
+        <activity android:name=".WelcomeActivity" />
+        <activity
+            android:name=".ui.SignupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ui.DashboardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.UserSelectionActivity"
+            android:screenOrientation="portrait" />
+
+        <!-- Fabric live key -->
+        <!--
+          <meta-data
+          android:name="io.fabric.ApiKey"
+          android:value="da3a01ef2d0ff38f6143ee6a076b225f0659b571" />
+        -->
+        <!--
+                <provider
+                android:name="com.millennialmedia.internal.utils.MediaContentProvider"
+                android:authorities="${com.flocktamer}.MediaContentProvider"
+                android:grantUriPermissions="true"
+                android:exported="false" />
+        -->
+        <activity
+            android:name=".ui.TabsInitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mopub.common.MoPubBrowser"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.TwitterUsersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.AddAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.ContactUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.TopicsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.DigitActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".InstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FcmMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            tools:replace="android:value"
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.MeetEditorActivity" />
+        <activity android:name=".ui.SuggestionActivity" />
+        <activity android:name=".ui.SortActivity" />
+
+        <!-- test account -->
+        <meta-data
+            tools:replace="android:value"
+            android:name="io.fabric.ApiKey"
+            android:value="844dd0ef2b55e4dd97be6f4764d95ae304e179d6"
+            />
+
+        <activity
+            android:name="com.mopub.mobileads.MoPubActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.mopub.mobileads.MraidActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <activity
+            android:name="com.mopub.mobileads.MraidVideoPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+        <!-- <activity android:name=".TeamResponseActivity" /> -->
+        <activity
+            android:name=".ui.TwitterAccountListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ComposeActivity"
+            android:screenOrientation="portrait" />
+        <meta-data
+            android:name="com.digits.sdk.android.ConsumerKey"
+            android:value="@string/twitter_consumer_key"/>
+        <meta-data
+            android:name="com.digits.sdk.android.ConsumerSecret"
+            android:value="@string/twitter_consumer_secret"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.flocktamer.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".ui.ManageSkimActivity"
+            android:label="@string/title_activity_manage_skim"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.SkimArticleActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ui.EditAlertKeywordsActivity"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

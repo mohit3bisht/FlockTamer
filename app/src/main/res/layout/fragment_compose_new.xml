@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.flocktamer.fragments.ComposeFragment">
+
+    <RelativeLayout
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.flocktamer.customview.CustomTextView
+            android:id="@+id/tv_tweet_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="Please write here to post a tweet. \n"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <EditText
+            android:id="@+id/et_tweet_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tweet_post"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:background="@drawable/enter_codebox"
+            android:maxLength="140"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:imeOptions="actionDone"
+            android:maxLines="10"
+            android:minLines="6"
+            android:padding="@dimen/dimen_10dp" />
+
+        <com.flocktamer.customview.CustomTextView
+            android:id="@+id/tv_post_text_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/et_tweet_text"
+            android:layout_marginRight="@dimen/dimen_5dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="0/140"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_post_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_post_text_counter"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+
+            android:maxHeight="200dp"
+            android:src="@drawable/add_image" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_post_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:background="@drawable/master_button"
+            android:text="Tweet"
+            android:textColor="@android:color/white" />
+        <RelativeLayout
+            android:id="@+id/ad_container"
+            android:layout_width="320dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btn_submit"
+
+            android:background="@android:color/darker_gray"
+
+            />
+    </RelativeLayout>
+</ScrollView>

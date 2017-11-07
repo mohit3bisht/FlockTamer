@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.flocktamer.fragments.AboutUsFragment">
+
+    <com.flocktamer.customview.CustomTextView
+        android:id="@+id/customTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/dimen_15dp"
+        android:text="@string/about_us_content"
+        android:textSize="@dimen/dimen_22sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/customTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="58dp"
+        android:src="@drawable/dog_loginpage" />
+
+</RelativeLayout>

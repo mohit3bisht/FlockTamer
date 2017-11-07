@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dimen_10dp"
+    android:orientation="vertical">
+
+    <!--<include layout="@layout/native_ad" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_15dp"
+        android:orientation="vertical">
+
+        <com.flocktamer.customview.CustomTextView
+            android:id="@+id/tv_retweeted_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:drawableLeft="@drawable/ic_retweet_small"
+            android:drawablePadding="@dimen/dimen_3dp"
+            android:text="Aman Deep Retweeted "
+            android:textColor="@color/theme_blue" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_tweet_profile"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp" />
+
+            <com.flocktamer.customview.CustomTextView
+                android:id="@+id/tv_tweet_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_3dp"
+                android:layout_toEndOf="@+id/iv_tweet_profile"
+                android:layout_toRightOf="@+id/iv_tweet_profile"
+                android:text="Aman Deep"
+                android:textColor="@android:color/black" />
+
+            <com.flocktamer.customview.CustomTextView
+                android:id="@+id/tv_tweet_userid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_tweet_username"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_1dp"
+                android:layout_toEndOf="@+id/iv_tweet_profile"
+                android:layout_toRightOf="@+id/iv_tweet_profile"
+                android:text="User id"
+                android:textColor="@color/link_color" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true" />
+        </RelativeLayout>
+
+        <com.flocktamer.customview.CustomTextView
+            android:id="@+id/tv_tweeter_maintext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_3dp"
+            android:autoLink="web"
+            android:text="12345678"
+            android:textSize="19sp"
+            app:font="tnr.ttf" />
+
+        <ImageView
+            android:id="@+id/iv_tweet_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/master_bg"
+            android:scaleType="centerCrop" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_quote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            card_view:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_quote_profile_image"
+                        android:layout_width="@dimen/dimen_40dp"
+                        android:layout_height="@dimen/dimen_40dp"
+                        android:layout_marginRight="@dimen/dimen_3dp" />
+
+                    <com.flocktamer.customview.CustomTextView
+                        android:id="@+id/tv_quote_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_toRightOf="@+id/iv_quote_profile_image"
+                        android:text="name in twitter"
+                        android:textColor="@android:color/black" />
+
+                    <com.flocktamer.customview.CustomTextView
+                        android:id="@+id/tv_quote_screen_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_quote_name"
+                        android:layout_marginTop="@dimen/dimen_3dp"
+                        android:layout_toRightOf="@+id/iv_quote_profile_image"
+                        android:text="screen name"
+                        android:textColor="@color/link_color" />
+                </RelativeLayout>
+
+                <com.flocktamer.customview.CustomTextView
+                    android:id="@+id/tv_quote_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:text="this is detailed text whiv sadg laksdngf;kja sdnlf;kashdagngkjbda;jkgrkw;"
+                    android:textSize="19sp"
+                    app:font="tnr.ttf" />
+
+                <ImageView
+                    android:id="@+id/iv_quote_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_twitter_retweet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:padding="@dimen/dimen_3dp"
+                app:srcCompat="@drawable/retweet" />
+
+            <ImageView
+                android:id="@+id/iv_twitter_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:padding="@dimen/dimen_3dp"
+                app:srcCompat="@drawable/ic_favorite" />
+
+            <ImageView
+                android:id="@+id/iv_twitter_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_15dp"
+                android:padding="@dimen/dimen_3dp"
+                app:srcCompat="@drawable/ic_reply" />
+
+            <ImageView
+                android:id="@+id/iv_twitter_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_3dp"
+                app:srcCompat="@drawable/ic_mail_icon" />
+
+            <com.flocktamer.customview.CustomTextView
+                android:id="@+id/tv_twitter_time_ago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@android:color/darker_gray" />
+
+    <com.google.android.gms.ads.NativeExpressAdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        app:adSize="320x150"
+        app:adUnitId="ca-app-pub-3159407339956393/4057761069" />
+<!--app:adUnitId="ca-app-pub-3159407339956393/4057761069" -->
+</LinearLayout>

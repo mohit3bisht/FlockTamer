@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/master_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.flocktamer.ui.ContactUsActivity">
+
+    <com.flocktamer.customview.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:textSize="@dimen/dimen_26sp"
+        android:visibility="gone"
+        app:html="@string/contact_us_title" />
+
+    <EditText
+        android:id="@+id/et_contactus_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@drawable/enter_codebox"
+        android:hint="Subject"
+        android:maxLines="1"
+        android:minLines="1"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:singleLine="true" />
+
+    <EditText
+        android:id="@+id/et_contactus_message"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_100dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@drawable/enter_codebox"
+        android:gravity="top"
+        android:inputType="textLongMessage"
+        android:padding="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_10dp" />
+
+    <Button
+        android:id="@+id/btn_contact_us_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@drawable/master_button"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_18sp" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_100dp"></FrameLayout>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants">
+
+    <com.flocktamer.customview.CustomTextView
+        android:id="@+id/tv_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:textColor="@android:color/black"
+        android:textColorLink="@android:color/black"
+        android:textSize="@dimen/dimen_23sp" />
+
+    <com.flocktamer.customview.CustomTextView
+        android:id="@+id/tv_company_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:text="160.1"
+        android:textColor="@color/green_company"
+        android:textSize="@dimen/dimen_23sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_company_rate"
+        android:layout_marginRight="@dimen/dimen_5dp"
+        android:orientation="horizontal">
+
+        <com.flocktamer.customview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="change " />
+
+        <com.flocktamer.customview.CustomTextView
+            android:id="@+id/tv_company_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.5 " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_company_links"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:orientation="vertical" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ll_company_links"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+</RelativeLayout>

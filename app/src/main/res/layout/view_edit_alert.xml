@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/blue_container"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal">
+
+    <com.flocktamer.customview.CustomTextView
+        android:id="@+id/tv_company_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dimen_5dp"
+        android:text="123456"
+        android:singleLine="true"
+        android:textSize="@dimen/dimen_15sp"
+        android:layout_weight="7"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/iv_company_item_cross"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_gravity="center"
+        android:padding="@dimen/dimen_3dp"
+        android:src="@drawable/close_box" />
+</LinearLayout>

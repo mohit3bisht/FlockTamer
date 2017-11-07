@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="com.flocktamer.fragments.LoginFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/theme_white_header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Login"
+            android:textColor="@color/theme_blue_dark"
+            android:textSize="@dimen/dimen_18sp" />
+    </RelativeLayout>
+
+ <!--   <com.digits.sdk.android.DigitsAuthButton
+        android:id="@+id/auth_btn_digit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login_email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="" />-->
+    <Button
+        android:id="@+id/auth_btn_digit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login_email"
+        android:layout_centerHorizontal="true"
+android:background="@drawable/signin_mobile"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_login_signup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="69dp"
+        android:src="@drawable/dog_loginpage" />
+
+    <Button
+        android:id="@+id/btn_login_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:textAllCaps="false"
+        android:background="@drawable/master_button"
+        android:text="Sign Up"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_login_email"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/login_with_email_btn"
+        android:text=""
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_login_fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/auth_btn_digit"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="@drawable/fb_btn"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/btn_login_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    android:layout_below="@+id/btn_login_fb"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_12dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_login_signup"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <com.flocktamer.customview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            app:html="@string/new_user" />
+
+        <com.flocktamer.customview.CustomTextView
+            android:id="@+id/tv_login_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Sign up"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

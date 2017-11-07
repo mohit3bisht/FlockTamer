@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/dimen_10dp">
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/cb_select_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/iv_delete_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:padding="@dimen/dimen_5dp"
+            android:src="@drawable/ic_close" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_twitter_user_image"
+        android:layout_width="@dimen/dimen_50dp"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="@dimen/dimen_10dp" />
+
+    <com.flocktamer.customview.CustomTextView
+        android:id="@+id/tv_twitter_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/iv_twitter_user_image"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_toEndOf="@+id/iv_twitter_user_image"
+        android:layout_toRightOf="@+id/iv_twitter_user_image"
+        android:text="Aman Deep" />
+
+    <com.flocktamer.customview.CustomTextView
+        android:id="@+id/tv_twitter_screen_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_twitter_user_name"
+        android:layout_toEndOf="@+id/iv_twitter_user_image"
+        android:layout_toRightOf="@+id/iv_twitter_user_image"
+        android:text="Screenname"
+        android:textColor="@color/link_color" />
+</RelativeLayout>

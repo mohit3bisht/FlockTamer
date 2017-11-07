@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.flocktamer.fragments.SortFragment">
+
+    <com.flocktamer.customview.CustomTextView
+        android:id="@+id/tv_sort_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:text="Drag and Drop topics to reorder" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_sort"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_sort_continue"
+        android:layout_below="@+id/tv_sort_title" />
+
+    <com.flocktamer.customview.CustomTextView
+        android:id="@+id/tv_sort_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@drawable/master_button"
+        android:gravity="center"
+        android:text="@string/continue_text"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_17sp" />
+</RelativeLayout>

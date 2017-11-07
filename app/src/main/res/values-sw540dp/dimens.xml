@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_3dp">5.40dp</dimen>
+    <dimen name="dimen_4dp">7.20dp</dimen>
+    <dimen name="dimen_5dp">9.00dp</dimen>
+    <dimen name="dimen_8dp">14.40dp</dimen>
+    <dimen name="dimen_10dp">18.00dp</dimen>
+    <dimen name="dimen_15dp">27.00dp</dimen>
+    <dimen name="dimen_20dp">36.00dp</dimen>
+    <dimen name="dimen_25dp">45.00dp</dimen>
+    <dimen name="dimen_30dp">54.00dp</dimen>
+    <dimen name="dimen_40dp">72.00dp</dimen>
+    <dimen name="dimen_50dp">90.00dp</dimen>
+    <dimen name="dimen_60dp">108.00dp</dimen>
+    <dimen name="dimen_70dp">126.00dp</dimen>
+    <dimen name="dimen_83dp">149.40dp</dimen>
+    <dimen name="dimen_150dp">270.00dp</dimen>
+    <dimen name="dimen_180dp">324.00dp</dimen>
+    <dimen name="dimen_300dp">540.00dp</dimen>
+
+    <!-- Negative Dps -->
+
+</resources>

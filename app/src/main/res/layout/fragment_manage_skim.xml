@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.flocktamer.fragments.CompaniesFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_keywords_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:background="@drawable/enter_codebox"
+            android:hint="Enter Title"
+            android:padding="@dimen/dimen_3dp"
+            android:visibility="gone"
+            android:textAlignment="gravity" />
+
+        <EditText
+            android:id="@+id/et_skim_keywords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_15dp"
+            android:layout_marginRight="@dimen/dimen_15dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@drawable/enter_codebox"
+            android:completionThreshold="1"
+            android:hint="Keywords"
+            android:imeOptions="actionDone"
+            android:inputType="textNoSuggestions"
+            android:maxLines="1"
+            android:minLines="1"
+            android:visibility="gone"
+            android:padding="@dimen/dimen_3dp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/btn_add_keywords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:background="@color/colorAccent"
+        android:paddingBottom="7sp"
+        android:paddingLeft="@dimen/dimen_20sp"
+        android:paddingRight="@dimen/dimen_20sp"
+        android:visibility="gone"
+        android:paddingTop="7sp"
+        android:text="Add"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_14sp" />
+
+
+    <com.flocktamer.customview.CustomTextView
+        android:id="@+id/tv_save_keywords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topic_continue_bttn"
+        android:gravity="center"
+        android:text="Save"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_18sp" />
+</LinearLayout>

@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    tools:context="com.flocktamer.fragments.SplashFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.flocktamer.customview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to"
+            android:textColor="@android:color/black"
+            android:textSize="28sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <com.flocktamer.customview.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_splash_getstart"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:text="Make the News Work for You"
+android:layout_marginTop="@dimen/dimen_16sp"
+        android:textColor="#0D46B9"
+        android:textSize="@dimen/dimen_22sp"
+        android:textStyle="bold" />
+
+    <com.flocktamer.customview.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:drawableLeft="@drawable/time_icon"
+        android:drawablePadding="@dimen/dimen_10dp"
+        android:gravity="center_vertical"
+        android:textColor="#CC000000"
+        android:textSize="@dimen/dimen_20sp"
+        android:textStyle="bold"
+        app:html="@string/splash_real_time" />
+
+    <com.flocktamer.customview.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:drawableLeft="@drawable/ft_dog_icon"
+        android:drawablePadding="@dimen/dimen_10dp"
+        android:gravity="center_vertical"
+        android:textColor="#CC000000"
+        android:textSize="@dimen/dimen_20sp"
+        android:textStyle="bold"
+        app:html="@string/splash_flocktamer_is" />
+
+    <com.flocktamer.customview.CustomTextView
+        android:id="@+id/tv_header_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:drawableLeft="@drawable/humans"
+        android:drawablePadding="@dimen/dimen_10dp"
+        android:gravity="fill_horizontal"
+        android:textColor="#CC000000"
+        android:textSize="@dimen/dimen_20sp"
+        android:textStyle="bold"
+        app:html="@string/splash_humans" />
+
+    <com.flocktamer.customview.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_8dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:drawableLeft="@drawable/twitter"
+        android:drawablePadding="@dimen/dimen_10dp"
+        android:gravity="center_vertical"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/dimen_20sp"
+        app:html="@string/splash_poweredby" />
+
+
+    <!--<com.flocktamer.customview.CustomTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/dimen_20dp"-->
+    <!--android:layout_marginRight="@dimen/dimen_20dp"-->
+    <!--android:layout_marginTop="@dimen/dimen_6dp"-->
+    <!--android:textSize="@dimen/dimen_15sp"-->
+    <!--app:html="@string/splash_bullet_1" />-->
+
+    <!--<com.flocktamer.customview.CustomTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/dimen_20dp"-->
+    <!--android:layout_marginRight="@dimen/dimen_20dp"-->
+    <!--android:layout_marginTop="@dimen/dimen_6dp"-->
+    <!--android:textSize="@dimen/dimen_15sp"-->
+    <!--app:html="@string/splash_bullet_2" />-->
+
+    <!--<com.flocktamer.customview.CustomTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/dimen_20dp"-->
+    <!--android:layout_marginRight="@dimen/dimen_20dp"-->
+    <!--android:layout_marginTop="@dimen/dimen_6dp"-->
+    <!--android:textSize="@dimen/dimen_15sp"-->
+    <!--app:html="@string/splash_bullet_3" />-->
+
+    <!--<com.flocktamer.customview.CustomTextView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginLeft="@dimen/dimen_20dp"-->
+    <!--android:layout_marginRight="@dimen/dimen_20dp"-->
+    <!--android:layout_marginTop="@dimen/dimen_6dp"-->
+    <!--android:textSize="@dimen/dimen_15sp"-->
+    <!--app:html="@string/splash_bullet_4" />-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_20dp">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_splash_getstart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dimen_3dp"
+            android:background="@drawable/master_button">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="@dimen/dimen_10dp"
+                android:drawableRight="@drawable/text_arrow"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/get_started"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

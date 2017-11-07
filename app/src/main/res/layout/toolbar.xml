@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/theme_white_header"
+    android:visibility="visible"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.flocktamer.customview.CustomTextView
+        android:id="@+id/tv_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text="dddddddddddd"
+        android:textColor="@color/toolbar_text_color"
+        android:paddingRight="@dimen/dimen_15dp"
+        android:textSize="@dimen/dimen_15sp"
+        android:textStyle="bold" />
+
+    <com.flocktamer.customview.CustomTextView
+        android:id="@+id/tv_toolbar_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:padding="@dimen/dimen_5dp"
+        android:text="SORT"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="@dimen/dimen_16sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_right_tool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_profile_icon"
+android:layout_alignParentRight="true"
+        android:visibility="gone"
+        />
+</RelativeLayout>
+</android.support.v7.widget.Toolbar>

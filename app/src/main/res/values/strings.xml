@@ -1,0 +1,159 @@
+<resources>
+    <string name="app_name">FlockTamer</string>
+    <string name="facebook_app_id">1239838622744569</string>
+
+    <string name="app_name_toolbar"><![CDATA[<font color=#0C5CC3>Flock</font><font color=#002A40><b>Tamer</b></font>]]></string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--<string name="splash_real_time"><![CDATA[<font color=#000000>Thousands of Sources for <br /></font><font color=#0061be><b>Real Time News & Commentary</b></font>]]></string>-->
+    <string name="splash_real_time">Making Sense of Thousands of Sources for Real Time News &amp; Commentary.</string>
+    <string name="splash_poweredby"><![CDATA[<font > Twitter user? You can fully integrate your account via My Twitter Tab.</font>]]></string>
+    <!--<string name="splash_flocktamer_is"><![CDATA[<font color=#000000>FlockTamer is a Free, Easy to Use Service Providing the </font><font color=#0061be><b>Most Relevant News.</b></font>]]></string>-->
+    <string name="splash_flocktamer_is">FlockTamer is a Free, Easy to Use Service Providing the Most Relevant News.</string>
+    <string name="splash_humans"><![CDATA[<font >How are we better? Human Curation! </font><font color=#0061be><b>Meet the Editor </b></font></font><font > to learn why.</font>]]></string>
+    <string name="contact_us_title"><![CDATA[<font color=#000000>Contact </font><font color=#ffffff><b>Flock</font><font color=#000000>Tamer</font></b>]]></string>
+
+    <!--<string name="splash_no_twitter"><![CDATA[<font color=#0061be>&#x25cf; </font><font color=#000000>No Twitter login is required to enjoy<br /><b> Relevant Real Time News.</font>]]></string>-->
+    <string name="splash_bullet_1"><![CDATA[<font color=#0061be>&#x25cf; </font><font color=#000000>Making Sense of Thousands of Sources for Real Time News & Commentary.</font>]]></string>
+    <!--<string name="splash_twitterlogin"><![CDATA[<font color=#0061be>&#x25cf; </font><font color=#000000>If you do have a Twitter login then you can link to your Twitter account and import anything you are currently following.</font>]]></string>-->
+    <string name="splash_bullet_2"><![CDATA[<font color=#0061be>&#x25cf; </font><font color=#000000>FlockTamer is a Free, Easy to Use Service Providing the Most Relevant News.</font>]]></string>
+    <!--<string name="splash_my_tab"><![CDATA[<font color=#0061be>&#x25cf; </font><font color=#000000> Make sure you select<b> My Conversation tab</b> to enjoy this functionality.</font>]]></string>-->
+    <string name="splash_bullet_3"><![CDATA[<font color=#0061be>&#x25cf; </font><font color=#000000> How are we better? Human Curation!</font> <font color=#2f58c4 >Meet the Editor </font></font><font color=#000000> to learn why.</font>]]></string>
+    <string name="splash_bullet_4"><![CDATA[<font color=#0061be>&#x25cf; </font><font color=#000000> Twitter user? You can fully integrate your account via My Twitter Tab.</font>]]></string>
+    <string name="new_user"><![CDATA[<font color=#000000> New to </font><font color=#0061be>Flock</font><font color=#002a3f>Tamer?</font>]]></string>
+    <string name="get_started">Get Started</string>
+    <string name="continue_text">Continue</string>
+    <string name="resend_code"><![CDATA[<u>Resend Code</u>]]></string>
+    <string name="editor_choice">Editor\'s Choice</string>
+    <string name="i_ll_pick">I\'ll Pick</string>
+    <string name="login">Login</string>
+    <string name="access_token_expire">Access token expired. Please login again.</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+
+    <string-array name="array_countrycode">
+        <item>+1</item>
+        <item>+91</item>
+    </string-array>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="action_settings">Settings</string>
+    <string name="no_internet">no internet connection</string>
+    <string name="terms_of_service"><u>Terms of Service</u></string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+    <string name="sponsored_by">Sponsored by</string>
+    <string name="topics_header"><![CDATA[Users have the ability to select from the following topics. Additional topics are coming soon.\n\nPosts are < 140 characters each and many include links to underlying articles:]]></string>
+    <string name="select_all">Select All</string>
+    <string name="about_us_content"><![CDATA[FlockTamer is Real Time News & Commentary Powered by Twitter and Curated by Humans.]]></string>
+    <string name="flock_tamer_title"><![CDATA[<font color=#0C5DC5><b>Flock</b></font><font color=#0C5DC5>Tamer</font>]]></string>
+    <string name="skim_article_title"><![CDATA[<font color=#0C5DC5><b>Skim</b></font><font color=#0C5DC5>Article</font>]]></string>
+    <string name="reenter_number"><![CDATA[<u>Re-Enter Number</u>]]></string>
+    <string name="meet_the_editor_content"><![CDATA[Thank you for visiting FlockTamer. I created FlockTamer as an easy to use and informative service focused on providing real time and accurate news about a wide range of subjects. <br /> <br /> Social media is an outstanding source of news, commentary and disinformation- but it is also like trying to take a sip of water from a firehose. I have been an avid consumer of news for over 35 years. My job as the editor is to find the best sources, the ones worthy of your attention. I assess the quality and merit of different sources through the lens of an experienced business person, an open-minded citizen, an intensely curious person and a student of history. My professional experience includes working as a Certified Public Accountant, Investment Banker and Financial Services professional. My personal life includes a loving family of humans and pets. I strive to present useful information, free of any agenda, except keeping you informed of the most important and interesting things in the world around you.<br /><br />I can be reached at jilly@flocktamer.com if you have any questions or comments. <br /><br />Jason Miller <br />November 2016]]></string>
+    <string name="edit_text"><u>Edit</u></string>
+    <string name="advertisement">Advertisement</string>
+    <string name="request">"Permission for Read Emails "</string>
+    <string name="enter_terms">Enter a term to create a Custom Search (like \"copper\") and hit enter. Repeat for an additional term. (2 is max)</string>
+    <string name="type_stock_symbol">Type Stock Symbol</string>
+    <string name="empty_filed">This field is required.</string>
+    <string name="you_are_not_connected_with_internet">You are not connected with internet. Please check your internet settings.</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="please_add_a_twitter_account">Please add a twitter account.</string>
+    <string name="perm_read_label">wwwwww</string>
+    <string name="perm_read">wwwwww</string>
+    <string name="okay">OK</string>
+    <string name="s_p"><![CDATA[S&P]]></string>
+    <string name="title_activity_manage_skim">ManageSkimActivity</string>
+    <string name="save_tags_get_news_alert">Save tags to get \"News Alerts\" (like \"music\") and hit enter. Repeat for an additional term.</string>
+
+
+</resources>
