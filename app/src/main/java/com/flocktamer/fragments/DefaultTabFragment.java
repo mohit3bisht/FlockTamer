@@ -1037,7 +1037,7 @@ public class DefaultTabFragment extends BaseFragment implements TwitterItemClick
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                replyCounter.setText(replyText.getText().toString().length() + "/140");
+                replyCounter.setText(replyText.getText().toString().length() + "/280");
 
             }
 

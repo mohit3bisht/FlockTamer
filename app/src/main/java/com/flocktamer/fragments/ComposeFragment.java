@@ -210,7 +210,7 @@ public class ComposeFragment extends BaseFragment implements View.OnClickListene
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                mTextCounter.setText(mTweetText.getText().toString().length() + "/140");
+                mTextCounter.setText(mTweetText.getText().toString().length() + "/280");
             }
 
             @Override
