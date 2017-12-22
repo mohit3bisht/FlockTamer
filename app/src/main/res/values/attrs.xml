@@ -14,7 +14,7 @@
     </declare-styleable>
 
     <declare-styleable name="ViewShofur">
-        <attr name="font" format="string" />
+        <attr name="font_type" format="string" />
         <attr name="clear_drawable" format="reference" />
         <attr name="html" format="string" />
 

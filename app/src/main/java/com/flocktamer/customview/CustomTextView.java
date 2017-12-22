@@ -33,7 +33,7 @@ public class CustomTextView extends TextView {
                 R.styleable.ViewShofur,
                 0, 0);
         try {
-            mFont = a.getString(R.styleable.ViewShofur_font);
+            mFont = a.getString(R.styleable.ViewShofur_font_type);
             htmlText = a.getString(R.styleable.ViewShofur_html);
         } finally {
             a.recycle();
@@ -49,7 +49,7 @@ public class CustomTextView extends TextView {
                 0, 0);
 
         try {
-            mFont = a.getString(R.styleable.ViewShofur_font);
+            mFont = a.getString(R.styleable.ViewShofur_font_type);
             htmlText = a.getString(R.styleable.ViewShofur_html);
         } finally {
             a.recycle();

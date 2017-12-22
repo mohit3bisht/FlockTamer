@@ -157,7 +157,7 @@
                         android:autoLink="web"
                         android:lineSpacingExtra="@dimen/dimen_3dp"
                         android:textSize="19sp"
-                        app:font="tnr.ttf"
+                        app:font_type="@string/font_name"
                         android:text="This is tweet which is displayed like this." />
                 </RelativeLayout>
             </LinearLayout>

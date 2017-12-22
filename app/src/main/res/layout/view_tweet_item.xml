@@ -75,7 +75,7 @@
             android:autoLink="web"
             android:text="12345678"
             android:textSize="19sp"
-            app:font="tnr.ttf" />
+            app:font_type="@string/font_name" />
 
         <ImageView
             android:id="@+id/iv_tweet_image"
@@ -134,7 +134,7 @@
                     android:layout_marginTop="@dimen/dimen_5dp"
                     android:text="this is detailed text whiv sadg laksdngf;kja sdnlf;kashdagngkjbda;jkgrkw;"
                     android:textSize="19sp"
-                    app:font="tnr.ttf" />
+                    app:font_type="@string/font_name" />
 
                 <ImageView
                     android:id="@+id/iv_quote_image"

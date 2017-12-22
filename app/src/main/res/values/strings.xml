@@ -154,6 +154,7 @@
     <string name="s_p"><![CDATA[S&P]]></string>
     <string name="title_activity_manage_skim">ManageSkimActivity</string>
     <string name="save_tags_get_news_alert">Save tags to get \"News Alerts\" (like \"music\") and hit enter. Repeat for an additional term.</string>
+    <string name="font_name">tnr.ttf</string>
 
 
 </resources>

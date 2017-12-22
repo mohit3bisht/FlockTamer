@@ -21,11 +21,11 @@ android {
         config {
             keyAlias 'FlockTamer'
             keyPassword 'Tabasco1shot '
-            storeFile file('/media/shahbaz/data1/Mohit/Client_Projects/hooman/FlockTamer/FlockTamer_workspace/FlockTamerAndroidA/FlockTamerKeyStore.jks')
+            storeFile file('file:/media/shahbaz/data1/Mohit/Client_Projects/hooman/FlockTamer/FlockTamer_workspace/FlockTamer_Latest_Code/FlockTamer/FlockTamerKeyStore.jks')
             storePassword 'Tabasco1shot '
         }
     }
-    compileSdkVersion 25
+    compileSdkVersion 26
     buildToolsVersion '26.0.2'
     dexOptions {
         javaMaxHeapSize "4g"
@@ -45,17 +45,17 @@ android {
     buildTypes {
         debug {
             buildConfigField "String", "API_URL", '"http://stage.flocktamer.com/apis/"'
-            buildConfigField "String", "TWITTER_KEY", '"iFIMgPcbEo5X0wyFCN8ods00d"'
+            buildConfigField "String", "TWITTER_KEY", '"4nTB8X1OlfuSrt6rf8VIFikrj"'
             buildConfigField "String", "BUILDTYPE", '"debug"'
-            buildConfigField "String", "TWITTER_SECRET", '"vZjesSHVuw2H7Y2rUswVwG0ffB2pUIDsFFHOdcjgcnUv6qWkzL"'
+            buildConfigField "String", "TWITTER_SECRET", '"8RKxVJHVkpA7mj90kppgTUyBz44QxOhaHAJlK0hqPwWkwKxnM5"'
             resValue "string", "fabric_key", "844dd0ef2b55e4dd97be6f4764d95ae304e179d6"
         }
         client {
             initWith(buildTypes.debug)
             buildConfigField "String", "API_URL", '"https://www.flocktamer.com/apis/"'
-            buildConfigField "String", "TWITTER_KEY", '"56lkb1I92LFA6AojJsNWKFoUR"'
+            buildConfigField "String", "TWITTER_KEY", '"4nTB8X1OlfuSrt6rf8VIFikrj"'
             buildConfigField "String", "BUILDTYPE", '"client"'
-            buildConfigField "String", "TWITTER_SECRET", '"Wy2IW3c2i2oYgutWLS9DtcRPEJ5MV471guWNAKsoD2eYHUOKNN"'
+            buildConfigField "String", "TWITTER_SECRET", '"8RKxVJHVkpA7mj90kppgTUyBz44QxOhaHAJlK0hqPwWkwKxnM5"'
             minifyEnabled false
             resValue "string", "fabric_key", "844dd0ef2b55e4dd97be6f4764d95ae304e179d6"
         }
@@ -63,9 +63,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             buildConfigField "String", "API_URL", '"https://www.flocktamer.com/apis/"'
-            buildConfigField "String", "TWITTER_KEY", '"56lkb1I92LFA6AojJsNWKFoUR"'
+            buildConfigField "String", "TWITTER_KEY", '"4nTB8X1OlfuSrt6rf8VIFikrj"'
             buildConfigField "String", "BUILDTYPE", '"release"'
-            buildConfigField "String", "TWITTER_SECRET", '"Wy2IW3c2i2oYgutWLS9DtcRPEJ5MV471guWNAKsoD2eYHUOKNN"'
+            buildConfigField "String", "TWITTER_SECRET", '"8RKxVJHVkpA7mj90kppgTUyBz44QxOhaHAJlK0hqPwWkwKxnM5"'
             resValue "string", "fabric_key", "da3a01ef2d0ff38f6143ee6a076b225f0659b571"
             signingConfig signingConfigs.config
         }
@@ -140,3 +140,14 @@ dependencies {
 }
 
 apply plugin: 'com.google.gms.google-services'
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '25.3.1'
+            }
+        }
+    }
+}
